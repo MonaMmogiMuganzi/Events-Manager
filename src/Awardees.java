@@ -1,4 +1,4 @@
-public class Awardees {
+public class Awardees implements Introduction {
     private String nameOfAwardee;
     private String Gender;
     private String occupation;
@@ -31,6 +31,11 @@ public class Awardees {
 
     public void setOccupation(String occupation) {
         this.occupation = occupation;
+    }
+
+    @Override
+    public void introduce() {
+        System.out.println("The awardee is..." + this.nameOfAwardee);
     }
 
     public String toString() {

@@ -1,4 +1,4 @@
-public class MasterOfEvent {
+public class MasterOfEvent implements Introduction {
     private String nameOfMasterOfEvent;
     private String occupationOfMasterOfEvent;
 
@@ -24,6 +24,11 @@ public class MasterOfEvent {
 
     public void setOccupationOfMasterOfEvent(String occupationOfMasterOfEvent) {
         this.occupationOfMasterOfEvent = occupationOfMasterOfEvent;
+    }
+
+    @Override
+    public void introduce() {
+        System.out.println("MasterOfEvent is..." + this.nameOfMasterOfEvent);
     }
 
     public String toString() {

@@ -1,6 +1,7 @@
+import javax.security.sasl.SaslClient;
 import java.util.ArrayList;
 
-public class UboraEvent {
+public class UboraEvent implements Schedule {
     private String eventName;
     private String eventLocation;
     private String eventDate;
